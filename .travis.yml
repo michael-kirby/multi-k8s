@@ -6,7 +6,7 @@ env:
   global:
     - SHA=$(git rev-parse HEAD)
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
-    - CLOUDSDK_PYTHON=python3.9
+    - CLOUDSDK_PYTHON=python3.12
 before_install:
   - openssl aes-256-cbc -K $encrypted_00afeeec2713_key -iv $encrypted_00afeeec2713_iv -in multi-k8s-414117-b411fbfb804b.json.enc -out multi-k8s-414117-b411fbfb804b.json -d
   - curl https://sdk.cloud.google.com | bash > /dev/null
